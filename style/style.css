@@ -7,7 +7,7 @@
   --el-xxl: 4.9rem;
   --lg-xl: 3rem;
   --md-l: 1.12rem;
-  --sm-s: 0.8rem;
+  --sm-s: 0.875rem;
   background-color: black;
 }
 
@@ -17,16 +17,14 @@
   border: none;
   color: white;
 }
+
 /* shared */
 .flex {
   display: flex;
 }
+
 .gird {
   display: grid;
-}
-
-.max-width {
-  max-width: calc(66.25%);
 }
 
 .btn {
@@ -51,6 +49,28 @@
   cursor: pointer;
 }
 
+.container {
+  max-width: calc(66.25%);
+  margin: 0 auto;
+}
+
+.text-container {
+  max-width: 671px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: var(--lg-xl);
+  font-weight: 900;
+  margin-bottom: 14px;
+}
+
+.section-sub-title {
+  font-weight: 400;
+  font-size: var(--sm-s);
+  color: var(--light-gry);
+}
+
 /* background-color */
 
 .bg-color {
@@ -59,6 +79,7 @@
     rgb(17, 17, 17),
     rgba(119, 119, 119, 0) 100%
   );
+  margin-bottom: 100px;
 }
 
 /* nav */
@@ -66,7 +87,6 @@
 .nav {
   align-items: center;
   justify-content: space-between;
-  margin: 0 auto;
   padding-top: 57px;
   padding-bottom: 32px;
 }
@@ -100,7 +120,6 @@
 
 /*  hero */
 .hero-container {
-  margin: 0 auto;
   align-items: center;
   justify-content: space-between;
   gap: 167px;
@@ -176,5 +195,41 @@
 
 .card-text {
   font-weight: 400;
+  color: var(--light-gry);
+}
+
+/* change-happit */
+
+.change-happit {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 58px;
+  margin-bottom: 100px;
+}
+
+.habbits {
+  gap: 40px;
+}
+
+.habbit {
+  max-width: 231px;
+  text-align: center;
+}
+
+.habbit > img {
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.habbit > h3 {
+  font-weight: 600;
+  font-size: var(--md-l);
+  margin-bottom: 6px;
+}
+
+.habbit > p {
+  font-weight: 400;
+  font-size: var(--sm-s);
   color: var(--light-gry);
 }
