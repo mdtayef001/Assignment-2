@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap");
 :root {
   font-family: "Inter", sans-serif;
   --primary-color: rgb(230, 83, 60);
@@ -7,17 +8,51 @@
   --lg-xl: 3rem;
   --md-l: 1.12rem;
   --sm-s: 0.8rem;
+  background-color: black;
 }
 
 * {
   padding: 0;
   margin: 0;
-  background-color: black;
+  border: none;
+}
+/* shared */
+.flex {
+  display: flex;
+}
+.gird {
+  display: grid;
 }
 
-/* hero-section */
+.max-width {
+  max-width: calc(66.25%);
+}
 
-.hero-container {
+.btn {
+  font-size: var(--md-l);
+  font-weight: 600;
+  padding: 16px 40px;
+  border-radius: 42px;
+  background-color: var(--primary-color);
+  color: white;
+  margin-right: 14px;
+  cursor: pointer;
+}
+
+.btn-2 {
+  font-size: var(--md-l);
+  font-weight: 600;
+  padding: 16px 40px;
+  border: 1px solid white;
+  border-radius: 42px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+/* background-color */
+
+.bg-color {
   background: linear-gradient(
     180deg,
     rgb(17, 17, 17),
@@ -28,12 +63,11 @@
 /* nav */
 
 .nav {
-  max-width: 1060px;
-  display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
   padding-top: 57px;
+  padding-bottom: 32px;
 }
 
 .nav .logo {
@@ -43,7 +77,6 @@
 }
 
 .nav .links {
-  display: flex;
   gap: 48px;
   list-style: none;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -62,4 +95,35 @@
   font-weight: 600;
   border-radius: 46px;
   padding: 8px 20px;
+}
+
+/*  hero */
+.hero-container {
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 167px;
+}
+
+.hero-text-contaienr {
+  max-width: 520px;
+}
+
+.hero-title {
+  color: white;
+  font-size: var(--el-xxl);
+  font-weight: 900;
+  margin-bottom: 28px;
+  line-height: 6rem;
+}
+
+.hero-title span {
+  font-family: "Grey Qo", cursive;
+  font-size: 9.3rem;
+  font-weight: 300;
+}
+
+.sub-title {
+  color: var(--light-gry);
+  margin-bottom: 28px;
 }
