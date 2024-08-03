@@ -15,6 +15,7 @@
   padding: 0;
   margin: 0;
   border: none;
+  color: white;
 }
 /* shared */
 .flex {
@@ -103,6 +104,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 167px;
+  position: relative;
 }
 
 .hero-text-contaienr {
@@ -110,7 +112,6 @@
 }
 
 .hero-title {
-  color: white;
   font-size: var(--el-xxl);
   font-weight: 900;
   margin-bottom: 28px;
@@ -126,4 +127,54 @@
 .sub-title {
   color: var(--light-gry);
   margin-bottom: 28px;
+}
+
+.card-color {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+
+.cards-1 {
+  position: absolute;
+  right: 250px;
+  bottom: 100px;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  width: 206px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  background: rgba(48, 48, 48, 0.54);
+  padding: 20px 23px;
+}
+
+.cards-2 {
+  position: absolute;
+  top: 150px;
+  right: -100px;
+  width: 193px;
+  text-align: center;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  background: rgba(48, 48, 48, 0.54);
+  padding: 20px 23px;
+}
+
+.card-number {
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.cards-2 > .card-number {
+  font-size: 2.5rem;
+}
+
+.card-text {
+  font-weight: 400;
+  color: var(--light-gry);
 }
