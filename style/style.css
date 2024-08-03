@@ -88,7 +88,7 @@
   align-items: center;
   justify-content: space-between;
   padding-top: 57px;
-  padding-bottom: 32px;
+  padding-bottom: 35px;
 }
 
 .nav .logo {
@@ -102,7 +102,7 @@
   list-style: none;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 39px;
-  padding: 10px;
+  padding: 10px 20px 11px 5px;
 }
 
 .link a {
@@ -203,13 +203,15 @@
 .change-happit {
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 58px;
   margin-bottom: 100px;
 }
 
 .habbits {
+  width: 100%;
   gap: 40px;
+  justify-content: space-between;
 }
 
 .habbit {
@@ -232,4 +234,32 @@
   font-weight: 400;
   font-size: var(--sm-s);
   color: var(--light-gry);
+}
+
+/* Run an Extra Mile Easily */
+
+.run {
+  align-items: center;
+  justify-content: space-between;
+  gap: 165px;
+  border-radius: 18px;
+  padding: 30px 32px 30px 32px;
+  background: rgb(34, 34, 34);
+  margin-bottom: 100px;
+}
+
+.run-text-container {
+  max-width: 443px;
+}
+
+.run-text-container > p {
+  margin-bottom: 34px;
+}
+.run-img-container {
+  max-width: 100%;
+}
+
+.run-img-container > img {
+  width: 366px;
+  border-radius: 18px;
 }
